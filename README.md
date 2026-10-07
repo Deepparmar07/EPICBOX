@@ -1,96 +1,63 @@
-# Welcome to Cloud Storage Project
-Application Link URL
-    URL:https://epicbox.vercel.app/
+# EPICBOX — JSS NGO Website
 
-# Welcome to cloud Storage Project
+EPICBOX is the web presence and service backend for the JSS NGO project. It provides information about the organisation, its projects and events, and gives visitors ways to donate, volunteer, and get in touch.
 
-## Project Info
+**Live website:** [jssngo.netlify.app](https://jssngo.netlify.app/)
 
-## Project Directory
+## Features
 
-```
-├── README.md # Documentation
-├── components.json # Component library configuration
-├── eslint.config.js # ESLint configuration
-├── index.html # Entry file
-├── package.json # Package management
-├── postcss.config.js # PostCSS configuration
-├── public # Static resources directory
-│   ├── favicon.png # Icon
-│   └── images # Image resources
-├── src # Source code directory
-│   ├── App.tsx # Entry file
-│   ├── components # Components directory
-│   ├── context # Context directory
-│   ├── db # Database configuration directory
-│   ├── hooks # Common hooks directory
-│   ├── index.css # Global styles
-│   ├── layout # Layout directory
-│   ├── lib # Utility library directory
-│   ├── main.tsx # Entry file
-│   ├── routes.tsx # Routing configuration
-│   ├── pages # Pages directory
-│   ├── services # Database interaction directory
-│   ├── types # Type definitions directory
-├── tsconfig.app.json # TypeScript frontend configuration file
-├── tsconfig.json # TypeScript configuration file
-├── tsconfig.node.json # TypeScript Node.js configuration file
-└── vite.config.ts # Vite configuration file
-```
+- Organisation, projects, events, photos, and videos pages
+- Online donation flow with Razorpay integration
+- Volunteer registration and contact forms
+- Email notifications through the backend service
+- Responsive pages for desktop and mobile visitors
 
-## Tech Stack
+## Technology
 
-Vite, TypeScript, React, Supabase
+- HTML, CSS, and JavaScript
+- Node.js and Express
+- MongoDB with Mongoose
+- Razorpay for payments
+- Nodemailer for email delivery
 
-## Development Guidelines
+## Project structure
 
-### How to edit code locally?
+- HTML files — public website pages
+- CSS files — page and component styling
+- custom.js and email.js — client-side interactions and form helpers
+- server.js — Express backend entry point
+- testConnection.js and test-email.js — local service checks
 
-You can choose [VSCode](https://code.visualstudio.com/Download) or any IDE you prefer. The only requirement is to have Node.js and npm installed.
+## Getting started
 
-### Environment Requirements
+### Prerequisites
 
-```
-# Node.js ≥ 20
-# npm ≥ 10
-Example:
-# node -v   # v20.18.3
-# npm -v    # 10.8.2
-```
+- Node.js 14 or newer
+- npm
+- A MongoDB connection for database-backed features
+- Payment and email provider credentials for production functionality
 
-### Installing Node.js on Windows
+### Install and run
 
-```
-# Step 1: Visit the Node.js official website: https://nodejs.org/, click download. The website will automatically suggest a suitable version (32-bit or 64-bit) for your system.
-# Step 2: Run the installer: Double-click the downloaded installer to run it.
-# Step 3: Complete the installation: Follow the installation wizard to complete the process.
-# Step 4: Verify installation: Open Command Prompt (cmd) or your IDE terminal, and type `node -v` and `npm -v` to check if Node.js and npm are installed correctly.
-```
+    npm install
+    npm start
 
-### Installing Node.js on macOS
+For development with automatic restarts:
 
-```
-# Step 1: Using Homebrew (Recommended method): Open Terminal. Type the command `brew install node` and press Enter. If Homebrew is not installed, you need to install it first by running the following command in Terminal:
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-Alternatively, use the official installer: Visit the Node.js official website. Download the macOS .pkg installer. Open the downloaded .pkg file and follow the prompts to complete the installation.
-# Step 2: Verify installation: Open Command Prompt (cmd) or your IDE terminal, and type `node -v` and `npm -v` to check if Node.js and npm are installed correctly.
-```
+    npm run dev
 
-### After installation, follow these steps:
+Open the local address shown by the server in your browser.
 
-```
-# Step 1: Download the code package
-# Step 2: Extract the code package
-# Step 3: Open the code package with your IDE and navigate into the code directory
-# Step 4: In the IDE terminal, run the command to install dependencies: npm i
-# Step 5: In the IDE terminal, run the command to start the development server: npm run dev -- --host 127.0.0.1
-# Step 6: if step 5 failed, try this command to start the development server: npx vite --host 127.0.0.1
-```
+## Environment configuration
 
-### How to develop backend services?
+Create a local .env file for the credentials required by the backend. Keep secrets out of Git, and configure the MongoDB, Razorpay, email, and server settings using the variable names expected by server.js.
 
-Configure environment variables and install relevant dependencies.If you need to use a database, please use the official version of Supabase.
+## Contributing
 
-## Learn More
+1. Create a feature branch.
+2. Make and test your changes locally.
+3. Submit a pull request with a clear description of the change.
 
-You can also check the help documentation: Download and Building the app（ [https://intl.cloud.baidu.com/en/doc/MIAODA/s/download-and-building-the-app-en](https://intl.cloud.baidu.com/en/doc/MIAODA/s/download-and-building-the-app-en)）to learn more detailed content.
+## Authors
+
+Deep Solanki, Jenil Sarvani, and Deep Parmar
